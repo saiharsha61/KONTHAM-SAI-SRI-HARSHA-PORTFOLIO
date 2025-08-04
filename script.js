@@ -35,19 +35,8 @@ window.onload = () => {
   typeHackerGreeting();
 };
 
-// Simple fake contact send & dynamic year
+// Dynamic year
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('contact-form');
-  const success = document.getElementById('contact-success');
-  if (form && success) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      success.style.display = 'block';
-      setTimeout(() => { success.style.display = 'none'; }, 3500);
-      form.reset();
-    });
-  }
-
   const yearEl = document.getElementById('year');
   if(yearEl) {
     yearEl.textContent = new Date().getFullYear();
