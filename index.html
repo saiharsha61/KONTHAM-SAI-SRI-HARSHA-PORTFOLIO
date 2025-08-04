@@ -73,37 +73,43 @@
       <h2>Highlighted Projects</h2>
       <div class="project">
         <h3>Flutter WebApp: Chatbot & Gesture Recognition</h3>
-        <p>
-          Developed an interactive web app with Flutter integrating chatbot and gesture recognition, achieving a <b>20% user engagement</b> increase.
-        </p>
+        <ul>
+          <li>Developed an interactive web app using <b>Flutter</b> and <b>Dart</b> to create a seamless user experience.</li>
+          <li>Integrated a chatbot for user interaction and gesture recognition for accessibility and ease of use.</li>
+          <li>Achieved a <b>20% increase in user engagement</b> through these innovative features.</li>
+          <li><a href="#contact">Contact me for a demo or link to the repository!</a></li>
+        </ul>
       </div>
       <div class="project">
         <h3>PDF Automation Script</h3>
-        <p>
-          Built a Python automation tool for extracting PDF fields and populating Google Sheets, reducing claims processing time by <b>70%</b>.
-        </p>
+        <ul>
+          <li>Built a robust automation tool in <b>Python</b> to parse and extract data from PDF documents.</li>
+          <li>Utilized libraries like <b>PyPDF2</b> and <b>pandas</b> for efficient data handling.</li>
+          <li>Integrated with the <b>Google Sheets API</b> to populate spreadsheets with the extracted data.</li>
+          <li>Reduced claims processing time by an impressive <b>70%</b>.</li>
+          <li><a href="#contact">Contact me for a demo or link to the repository!</a></li>
+        </ul>
       </div>
     </section>
     <section id="certifications">
       <h2>Certifications & Achievements</h2>
       <ul>
-        <li>Cybersecurity Essentials – Accemmegrade</li>
-        <li>Solid foundation in secure coding, OWASP, and penetration testing techniques.</li>
+        <li>
+          <b>Cybersecurity Essentials</b> – Accemmegrade <i>(Date Placeholder)</i>
+          <p style="margin-top: 5px;">Gained a solid foundation in secure coding, OWASP Top 10, and penetration testing techniques.</p>
+        </li>
       </ul>
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <form id="contact-form" autocomplete="off">
+      <form id="contact-form" action="https://formspree.io/f/xrblavjp" method="POST" autocomplete="off">
         <label for="name">Name:</label>
-        <input type="text" id="name" required />
+        <input type="text" id="name" name="name" required />
         <label for="email">Email:</label>
-        <input type="email" id="email" required />
+        <input type="email" id="email" name="email" required />
         <label for="message">Message:</label>
-        <textarea id="message" rows="3" required></textarea>
+        <textarea id="message" name="message" rows="3" required></textarea>
         <button type="submit">Send</button>
-        <div id="contact-success" style="display:none;margin-top:10px;">
-          <b>Message sent! Thank you.</b>
-        </div>
       </form>
     </section>
   </main>
