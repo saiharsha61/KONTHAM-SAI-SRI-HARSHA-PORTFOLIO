@@ -79,7 +79,7 @@ header, nav, main, footer {
 .glitch {
   font-size: 2.3rem;
   color: var(--primary-color);
-  text-shadow: 0 0 6px var(--primary-color), 0 0 15px var(--primary-color);
+  text-shadow: 0 0 3px var(--primary-color), 0 0 8px var(--primary-color);
   position: relative;
   display: inline-block;
   letter-spacing: 1.2px;
@@ -90,43 +90,43 @@ header, nav, main, footer {
   position: absolute;
   left: 0;
   width: 100%;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 .glitch:before {
   color: var(--glitch-cyan-color);
   z-index: -2;
   animation: glitchTop 1s infinite steps(2, end);
-  top: -2px;
+  top: -1px;
 }
 .glitch:after {
   color: var(--glitch-magenta-color);
   z-index: -1;
   animation: glitchBottom 1s infinite steps(2, end);
-  top: 2px;
+  top: 1px;
 }
 @keyframes glitch-skew {
   0% { transform: none; }
-  20% { transform: skew(-2deg,2deg); }
-  40% { transform: skew(2deg,-1deg); }
+  20% { transform: skew(-1deg,1deg); }
+  40% { transform: skew(1deg,-1deg); }
   60% { transform: skew(-1deg,1deg); }
-  80% { transform: skew(1deg,-2deg); }
+  80% { transform: skew(1deg,-1deg); }
   100% { transform: none; }
 }
 @keyframes glitchTop {
   0%, 100% { transform: none; }
-  10% { transform: translate(-2px, -2px);}
-  20% { transform: translate(2px, 2px);}
+  10% { transform: translate(-1px, -1px);}
+  20% { transform: translate(1px, 1px);}
   40% { transform: translate(-1px, 1px);}
   60% { transform: translate(1px, -1px);}
-  80% { transform: translate(-2px, 2px);}
+  80% { transform: translate(-1px, 1px);}
 }
 @keyframes glitchBottom {
   0%, 100% { transform: none; }
-  10% { transform: translate(2px, 2px);}
-  20% { transform: translate(-2px, -2px);}
+  10% { transform: translate(1px, 1px);}
+  20% { transform: translate(-1px, -1px);}
   40% { transform: translate(1px, -1px);}
   60% { transform: translate(-1px, 1px);}
-  80% { transform: translate(2px, -2px);}
+  80% { transform: translate(1px, -1px);}
 }
 
 header {
